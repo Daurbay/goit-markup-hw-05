@@ -130,10 +130,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after{
-    background: var(--buttons-background-color);
-}
 .header-contacts{
     display: flex;
     justify-content: space-between;
@@ -536,6 +532,7 @@ fill: var(--focus-accent-color);
 .footer-section-div{
     display: flex;
     align-items: center;
+    align-items: baseline;
 }
 
 .footer-social-links{
