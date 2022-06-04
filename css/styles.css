@@ -124,12 +124,12 @@ display: block;
     height: 4px;
     background: transparent;
     border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover::after,
 .menu-link:focus::after{
     background: var(--buttons-background-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts{
     display: flex;
@@ -154,12 +154,12 @@ display: block;
     }
     .header-social-phone{
         margin-right: 10px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .phone-number:focus .header-social-phone,
     .phone-number:hover .header-social-phone{
        fill: var(--focus-accent-color);
-       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .email{
@@ -167,24 +167,24 @@ display: block;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     color: #757575;
     }
 
 .email:hover,
 .email:focus{
     color: var(--focus-accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-social-email{
     margin-right: 10px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .email:focus .header-social-email,
 .email:hover .header-social-email{
    fill: var(--focus-accent-color);
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  /* Hero  */
@@ -226,6 +226,7 @@ display: block;
         border-radius: 4px;
         border: none;
         color: #FFFFFF;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .modal-btn:hover,
     .modal-btn:focus{
@@ -386,6 +387,7 @@ padding-bottom: 30px;
     height: 44px;
     border-radius: 50%;
     background-color: var(--background-color-social-link);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item:not(:last-child){
@@ -433,6 +435,7 @@ margin-bottom: 50px;
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
 .clients-item:not(:last-child){
@@ -443,10 +446,6 @@ margin-bottom: 50px;
 .clients-item:focus{
     border: 1px solid #2196F3;
     cursor: pointer
-}
-
-.clients-link{
-
 }
 
 .client{
@@ -549,6 +548,7 @@ color: var(--logo-black-theme-color)
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list-icon{
     fill: var(--logo-black-theme-color);
@@ -618,6 +618,7 @@ color: var(--logo-black-theme-color)
 .portfolio-item{
     background-color: #F5F4FA;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
@@ -626,6 +627,10 @@ color: var(--logo-black-theme-color)
     color: var(--buttons-focus-color);
     }
 
+.portfolio-btn{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
 .portfolio-btn:hover,
 .portfolio-btn:focus{
     background-color: var(--focus-accent-color);
@@ -653,6 +658,7 @@ color: var(--logo-black-theme-color)
 .projects-link{
     display: block;
     position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-link:hover,
 .projects-link:focus{
@@ -680,7 +686,7 @@ color: var(--logo-black-theme-color)
     height: 294px;
     transform: translateY(294px);
     background-color: rgba(33, 150, 243, 0.9);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:hover .projects-link-div,
